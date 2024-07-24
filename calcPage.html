@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calcPage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="calculate">
+      <div class="calculate-content">
+        <h2>Kindly enter your courses, score, and CGP</h2>
+
+        <form action="#">
+          <div class="input-box">
+            <input
+              type="text"
+              id="courseName"
+              placeholder="Enter Course Name"
+              name="name"
+              required />
+
+            <input
+              type="number"
+              id="score"
+              placeholder="Enter Score"
+              name="scores"
+              required />
+
+            <input
+              type="number"
+              id="CGP"
+              placeholder="Enter CGP"
+              name="CGP"
+              required />
+
+            <button type="" class="btn">+</button>
+          </div>
+
+          <div class="btn-box">
+            <button class="btn">Reset</button>
+            <button class="btn">Calculate CGP</button>
+          </div>
+
+          <p id="resultParagraph">No result yet...</p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "segoe UI", sans-serif;
+}
+
+:root {
+  --bg-color: rgb(254, 254, 240);
+  --text-color: rgb(186, 185, 185);
+  --main-color: rgb(233, 0, 0);
+  --second-text-color: rgb(3, 3, 3);
+  --border: 0.1rem solid var(--main-color);
+  --light-color: rgb(245, 235, 235);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  margin: 0 5%;
+  padding: 3rem 2rem;
+  min-height: 100vh;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.home-content {
+  max-width: 60rem;
+}
+
+.home-content h1 {
+  font-size: 6rem;
+  color: var(--second-text-color);
+  line-height: 1;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.home-content p {
+  font-size: 3rem;
+  margin: 2rem 0 4rem;
+  color: var(--second-text-color);
+}
+
+.btn {
+  color: var(--bg-color);
+  background: var(--main-color);
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background: rgb(202, 0, 0);
+}
+
+.calculate {
+  margin: 5%;
+}
+
+.calculate .calculate-content {
+  max-width: 100%;
+}
+
+.calculate .calculate-content h2 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.calculate .calculate-content form {
+  max-width: 100%;
+}
+
+.calculate .calculate-content form .input-box {
+  border: var(--border);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 6rem;
+}
+
+.calculate .calculate-content form .input-box input {
+  background: transparent;
+  border: var(--border);
+  border-radius: 8px;
+  padding-left: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.calculate .calculate-content form .input-box .btn {
+  font-size: 3rem;
+  padding: 0.1rem 1rem 0.5rem;
+  text-align: center;
+}
+
+.calculate .calculate-content form .input-box input:nth-child(1) {
+  width: 50%;
+}
+
+.calculate .calculate-content form .input-box input:nth-child(2) {
+  width: 20%;
+}
+
+.calculate .calculate-content form .input-box input:nth-child(3) {
+  width: 20%;
+}
+
+.calculate .calculate-content form .input-box input:nth-child(4) {
+  width: 10%;
+}
+
+.calculate .calculate-content form .btn-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.calculate .calculate-content form .btn-box .btn:nth-child(1) {
+  background: transparent;
+  color: var(--main-color);
+  border: var(--border);
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.calculate .calculate-content form .btn-box .btn:nth-child(1):hover {
+  background: rgb(255, 236, 232);
+}
+
+.calculate .calculate-content form p {
+  font-size: 3rem;
+  font-weight: 700;
+}
